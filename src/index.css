@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import 'highlight.js/styles/github.css';
+@import 'highlight.js/styles/github-dark.css';
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500 dark:bg-primary-500 dark:hover:bg-primary-600;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-500 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600;
+  }
+  
+  .btn-ghost {
+    @apply text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:ring-gray-500 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-100;
+  }
+  
+  .btn-icon {
+    @apply p-2 rounded-lg;
+  }
+  
+  .editor-block {
+    @apply p-4 mb-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm transition-all duration-200;
+  }
+  
+  .editor-block:focus-within {
+    @apply ring-2 ring-primary-500 border-primary-500;
+  }
+  
+  .editor-input {
+    @apply w-full bg-transparent border-none outline-none resize-none text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400;
+  }
+  
+  .drag-handle {
+    @apply cursor-move text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors;
+  }
+  
+  .preview-content {
+    @apply prose prose-gray dark:prose-invert max-w-none;
+  }
+  
+  .preview-content h1 {
+    @apply text-3xl font-bold mt-6 mb-4;
+  }
+  
+  .preview-content h2 {
+    @apply text-2xl font-semibold mt-5 mb-3;
+  }
+  
+  .preview-content h3 {
+    @apply text-xl font-medium mt-4 mb-2;
+  }
+  
+  .preview-content p {
+    @apply mb-4;
+  }
+  
+  .preview-content ul, .preview-content ol {
+    @apply mb-4 pl-6;
+  }
+  
+  .preview-content li {
+    @apply mb-2;
+  }
+  
+  .preview-content blockquote {
+    @apply border-l-4 border-gray-300 dark:border-gray-600 pl-4 italic my-4;
+  }
+  
+  .preview-content code {
+    @apply bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded text-sm;
+  }
+  
+  .preview-content pre {
+    @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto my-4;
+  }
+  
+  .preview-content pre code {
+    @apply bg-transparent p-0;
+  }
+}
+
