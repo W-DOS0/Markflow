@@ -8,12 +8,12 @@
   "theme_color": "#0ea5e9",
   "icons": [
     {
-      "src": "/media/MarkFlow.png",
+      "src": "/Markflow/media/MarkFlow.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/media/MarkFlow.svg",
+      "src": "/Markflow/media/MarkFlow.svg",
       "sizes": "192x192",
       "type": "image/svg+xml"
     }
