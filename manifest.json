@@ -1,0 +1,21 @@
+{
+  "name": "MarkFlow",
+  "short_name": "MarkFlow",
+  "description": "An elegant Markdown editor with drag-and-drop",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/media/MarkFlow.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/MarkFlow.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
