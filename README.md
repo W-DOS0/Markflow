@@ -54,11 +54,11 @@ npm run dev
 
 ## Usage
 
-Add Blocks: Use the toolbar at the bottom of the editor to add new blocks
-Edit Blocks: Click on any block and start editing
-Rearrange Blocks: Drag blocks by the handle (left side) to a new position
-Toggle Preview: Use the eye icon in the header
-Export: Click the export button to save your work as a .md file
+- **Add Blocks**: Use the toolbar at the bottom of the editor to add new blocks
+- **Edit Blocks**: Click on any block and start editing
+- **Rearrange Blocks**: Drag blocks by the handle (left side) to a new position
+- **Toggle Preview**: Use the eye icon in the header
+- **Export**: Click the export button to save your work as a .md file
 
 
 ## Contributing
