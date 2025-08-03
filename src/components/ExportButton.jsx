@@ -1,7 +1,7 @@
 import React from 'react';
 import { saveAs } from 'file-saver';
 import { format } from 'prettier/standalone';
-import parserMarkdown from 'prettier/parser-markdown';
+import * as parserMarkdown from 'prettier/plugins/markdown';
 import { formatMarkdown } from '../utils/exportMarkdown';
 
 const ExportButton = ({ blocks }) => {

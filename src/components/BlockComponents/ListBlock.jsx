@@ -7,18 +7,16 @@ const ListBlock = ({ block, updateBlock }) => {
 
   const toggleListType = () => {
     const lines = block.content.split('\n');
-    const newLines = lines.map(line => {
+    const newLines = lines.map((line, index) => {
       if (block.ordered) {
-        // Switch to unordered
         return line.replace(/^\d+\.\s*/, '- ');
       } else {
-        // Switch to ordered
-        return line.replace(/^[-*+]\s/, '1. ');
+        return `${index + 1}. ${line.replace(/^[-*+]\s*/, '')}`;
       }
     });
-    updateBlock(block.id, newLines.join('\n'));
     updateBlock(block.id, newLines.join('\n'), !block.ordered);
   };
+
 
   return (
     <div className="w-full">

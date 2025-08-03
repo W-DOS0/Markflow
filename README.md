@@ -15,7 +15,6 @@ MarkFlow was built with ❤️ to make writing Markdown content as simple and en
 - **Live Preview**: See your changes in real-time in the preview pane
 - **Dark Mode**: Protect your eyes with the built-in dark mode
 - **Export Functionality**: Export your work as clean .md files
-- **Fullscreen Mode**: Work without distractions in fullscreen mode
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **Accessibility**: Optimized for screen readers and keyboard navigation
 

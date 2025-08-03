@@ -3,7 +3,6 @@ import EditorArea from './components/Editor/EditorArea';
 import MarkdownPreview from './components/Preview/MarkdownPreview';
 import DarkModeToggle from './components/DarkModeToggle';
 import ExportButton from './components/ExportButton';
-import FullscreenToggle from './components/FullscreenToggle';
 import { DndContext } from '@dnd-kit/core';
 
 import { CSS } from '@dnd-kit/utilities';
@@ -22,7 +21,6 @@ function App() {
     { id: '4', type: 'list', content: '- Drag-and-drop support\n- Live preview\n- Dark mode\n- Export as .md file', ordered: false },
   ]);
   const [isPreviewVisible, setIsPreviewVisible] = useState(true);
-  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const updateBlock = (id, content) => {
     setBlocks(blocks.map(block => 
@@ -84,12 +82,9 @@ function App() {
     setIsPreviewVisible(!isPreviewVisible);
   };
 
-  const toggleFullscreen = () => {
-    setIsFullscreen(!isFullscreen);
-  };
 
   return (
-    <div className={`min-h-screen flex flex-col ${isFullscreen ? 'fixed inset-0 z-50 bg-white dark:bg-gray-900' : ''}`}>
+    <div className={`min-h-screen flex flex-col`}>
       <header className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 py-4">
         <div className="container flex items-center justify-between">
           <div className="flex items-center space-x-3">
@@ -114,7 +109,6 @@ function App() {
                 </svg>
               )}
             </button>
-            <FullscreenToggle isFullscreen={isFullscreen} toggleFullscreen={toggleFullscreen} />
             <ExportButton blocks={blocks} />
             <DarkModeToggle />
           </div>

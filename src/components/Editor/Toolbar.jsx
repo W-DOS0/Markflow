@@ -1,20 +1,20 @@
 import { 
-  MdTitle,       // für Überschrift
-  MdTextFields,  // für Absatz
-  MdFormatListBulleted, // Liste
-  MdCode,        // Code
-  MdFormatQuote, // Zitat
-  MdImage        // Bild
+  MdTitle,       
+  MdTextFields,  
+  MdFormatListBulleted, 
+  MdCode,        
+  MdFormatQuote, 
+  MdImage        
 } from 'react-icons/md';
 
 const Toolbar = ({ addBlock }) => {
   const blockTypes = [
-    { type: 'heading', icon: <MdTitle className="h-5 w-5" />, label: 'Überschrift' },
-    { type: 'paragraph', icon: <MdTextFields className="h-5 w-5" />, label: 'Absatz' },
-    { type: 'list', icon: <MdFormatListBulleted className="h-5 w-5" />, label: 'Liste' },
+    { type: 'heading', icon: <MdTitle className="h-5 w-5" />, label: 'Heading' },
+    { type: 'paragraph', icon: <MdTextFields className="h-5 w-5" />, label: 'Paragraph' },
+    { type: 'list', icon: <MdFormatListBulleted className="h-5 w-5" />, label: 'List' },
     { type: 'code', icon: <MdCode className="h-5 w-5" />, label: 'Code' },
-    { type: 'quote', icon: <MdFormatQuote className="h-5 w-5" />, label: 'Zitat' },
-    { type: 'image', icon: <MdImage className="h-5 w-5" />, label: 'Bild' },
+    { type: 'quote', icon: <MdFormatQuote className="h-5 w-5" />, label: 'Quote' },
+    { type: 'image', icon: <MdImage className="h-5 w-5" />, label: 'Image' },
   ];
 
   return (
